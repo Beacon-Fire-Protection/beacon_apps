@@ -6,9 +6,8 @@ export default function ProjectCard({ project, index }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   
-  // Use screenshotmachine API for reliable fully-loaded screenshots
-  const apiKey = 'placeholder';
-  const screenshotUrl = `https://api.screenshotmachine.com?key=${apiKey}&url=${encodeURIComponent(project.url)}&dimension=1024x768&delay=5000&cacheLimit=0`;
+  // Use microlink API with wait for network idle to ensure fully loaded screenshots
+  const screenshotUrl = `https://api.microlink.io/?url=${encodeURIComponent(project.url)}&screenshot=true&meta=false&embed=screenshot.url&waitUntil=networkidle0&timeout=30000`;
 
   return (
     <motion.a
