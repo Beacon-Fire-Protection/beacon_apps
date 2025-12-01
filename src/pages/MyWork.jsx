@@ -165,7 +165,7 @@ export default function MyWork() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">My Work</h1>
             <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
             <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-              A comprehensive showcase of all my 50+ web applications demonstrating expertise in 
+              A comprehensive showcase of {allProjects.length} web applications demonstrating expertise in 
               Computer Systems Design and Related Services.
             </p>
           </motion.div>
