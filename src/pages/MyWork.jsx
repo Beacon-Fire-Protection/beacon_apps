@@ -140,10 +140,22 @@ export default function MyWork() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <ProjectCard key={project.url} project={project} index={index} />
           ))}
         </div>
+
+        {/* Load more trigger */}
+        {hasMore && (
+          <div ref={loaderRef} className="flex justify-center py-12">
+            {isLoading && (
+              <div className="flex items-center gap-3 text-slate-500">
+                <Loader2 className="w-5 h-5 animate-spin" />
+                <span>Loading more projects...</span>
+              </div>
+            )}
+          </div>
+        )}
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
