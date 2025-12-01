@@ -1,111 +1,96 @@
-// Project data with static screenshot URLs for the first 15 projects
-// Remaining projects use the microlink API for dynamic screenshots
+
+// Project data - screenshots are generated dynamically using thum.io
 
 export const allProjects = [
   { 
     title: "Entryway Services", 
     description: "Business formation service for non-U.S. residents", 
     url: "https://entrywayservices.base44.app/", 
-    category: "Business Services",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fentrywayservices.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Business Services"
   },
   { 
     title: "Task Management", 
     description: "Team task and project tracking dashboard", 
     url: "https://taskmanagement.base44.app/", 
-    category: "Productivity",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Ftaskmanagement.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Productivity"
   },
   { 
     title: "AccPro", 
     description: "Professional accounting suite with inventory management", 
     url: "https://accpro.base44.app/", 
-    category: "Finance",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Faccpro.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Finance"
   },
   { 
     title: "Moda Studio", 
     description: "Contemporary fashion e-commerce with modern minimalism", 
     url: "https://modastudio.base44.app/", 
-    category: "Creative",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fmodastudio.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Creative"
   },
   { 
     title: "CodesMaster", 
     description: "Interactive programming education platform", 
     url: "https://codesmaster.base44.app/", 
-    category: "Education",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fcodesmaster.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Education"
   },
   { 
     title: "Study Buddies", 
     description: "Collaborative homework and study hub", 
     url: "https://studybuddies.base44.app/", 
-    category: "Education",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fstudybuddies.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Education"
   },
   { 
     title: "Company Portal", 
     description: "Enterprise employee portal and communications hub", 
     url: "https://companyportal.base44.app/", 
-    category: "Enterprise",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fcompanyportal.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Enterprise"
   },
   { 
     title: "Businesses", 
     description: "AI-powered assistant for lawyers and business professionals", 
     url: "https://businesses.base44.app/", 
-    category: "Business Services",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fbusinesses.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Business Services"
   },
   { 
     title: "Funnel Flows", 
     description: "Sales funnel design and management dashboard", 
     url: "https://funnelflows.base44.app/", 
-    category: "Marketing",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Ffunnelflows.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Marketing"
   },
   { 
     title: "Math Solve", 
     description: "AI-powered step-by-step math problem solver", 
     url: "https://mathsolve.base44.app/", 
-    category: "Education",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fmathsolve.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Education"
   },
   { 
     title: "Financial", 
     description: "Personal finance tracker with secure data management", 
     url: "https://financial.base44.app/", 
-    category: "Finance",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Ffinancial.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Finance"
   },
   { 
     title: "Finance Flows", 
     description: "Professional accounting dashboard with analytics", 
     url: "https://financeflows.base44.app/", 
-    category: "Finance",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Ffinanceflows.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Finance"
   },
   { 
     title: "Marketing Flow", 
     description: "Digital marketing CRM with sales pipeline", 
     url: "https://marketingflow.base44.app/", 
-    category: "Marketing",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fmarketingflow.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Marketing"
   },
   { 
     title: "Shopify Template", 
     description: "Luxury e-commerce storefront template", 
     url: "https://shopifytemplate.base44.app/", 
-    category: "E-commerce",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fshopifytemplate.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "E-commerce"
   },
   { 
     title: "Logistic", 
     description: "Global container logistics and shipping platform", 
     url: "https://logistic.base44.app/", 
-    category: "Business Services",
-    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Flogistic.base44.app%2F&screenshot=true&meta=false&embed=screenshot.url"
+    category: "Business Services"
   },
   { title: "JSON Generator", description: "JSON data generation and manipulation tool", url: "https://jsongenerator.base44.app/", category: "Developer Tools" },
   { title: "Clients", description: "Client relationship management system", url: "https://clients.base44.app/", category: "Business Services" },

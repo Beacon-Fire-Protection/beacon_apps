@@ -6,9 +6,8 @@ export default function ProjectCard({ project, index }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   
-  // Use pre-defined screenshot if available, otherwise use microlink API
-  const screenshotUrl = project.screenshot || 
-    `https://api.microlink.io/?url=${encodeURIComponent(project.url)}&screenshot=true&meta=false&embed=screenshot.url`;
+  // Use screenshot.io API for reliable screenshots
+  const screenshotUrl = `https://image.thum.io/get/width/800/crop/600/noanimate/${project.url}`;
 
   return (
     <motion.a
