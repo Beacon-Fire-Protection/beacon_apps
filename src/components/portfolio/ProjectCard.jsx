@@ -6,8 +6,9 @@ export default function ProjectCard({ project, index }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   
-  // Use thum.io API with wait parameter for fully loaded screenshots
-  const screenshotUrl = `https://image.thum.io/get/width/800/crop/600/wait/3/noanimate/${project.url}`;
+  // Use screenshotmachine API for reliable fully-loaded screenshots
+  const apiKey = 'placeholder';
+  const screenshotUrl = `https://api.screenshotmachine.com?key=${apiKey}&url=${encodeURIComponent(project.url)}&dimension=1024x768&delay=5000&cacheLimit=0`;
 
   return (
     <motion.a
