@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Globe, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { createPageUrl } from '@/utils';
 
-const projects = [
+const featuredProjects = [
   {
     title: "Entryway Services",
     description: "Professional service management platform",
@@ -22,40 +24,22 @@ const projects = [
     category: "Finance"
   },
   {
-    title: "Moda Studio",
-    description: "Creative design and studio management platform",
-    url: "https://modastudio.base44.app/",
-    category: "Creative"
-  },
-  {
-    title: "CodesMaster",
-    description: "Code learning and development resource hub",
-    url: "https://codesmaster.base44.app/",
-    category: "Education"
-  },
-  {
-    title: "Study Buddies",
-    description: "Collaborative learning and study platform",
-    url: "https://studybuddies.base44.app/",
-    category: "Education"
-  },
-  {
     title: "Company Portal",
     description: "Enterprise portal and internal communications system",
     url: "https://companyportal.base44.app/",
     category: "Enterprise"
   },
   {
-    title: "Businesses",
-    description: "Business directory and management application",
-    url: "https://businesses.base44.app/",
-    category: "Business Services"
+    title: "Financial Hub",
+    description: "Comprehensive financial data and analytics platform",
+    url: "https://financialhub.base44.app/",
+    category: "Finance"
   },
   {
-    title: "Funnel Flows",
-    description: "Marketing funnel and conversion optimization tool",
-    url: "https://funnelflows.base44.app/",
-    category: "Marketing"
+    title: "Craft Resume",
+    description: "Professional resume builder and management tool",
+    url: "https://craftresume.base44.app/",
+    category: "Productivity"
   }
 ];
 
@@ -130,6 +114,10 @@ function ProjectCard({ project, index }) {
 }
 
 export default function WorkSection() {
+  const handleViewAll = () => {
+    window.open(createPageUrl('MyWork'), '_blank');
+  };
+
   return (
     <section id="work" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -141,10 +129,10 @@ export default function WorkSection() {
           className="text-center mb-16"
         >
           <span className="text-[#C9A227] font-semibold text-sm tracking-widest uppercase">Portfolio</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">My Work</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">Featured Work</h2>
           <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            A collection of web applications demonstrating my capabilities in computer systems design, 
+            A selection of web applications demonstrating my capabilities in computer systems design, 
             development, and deployment. Click any project to view the live application.
           </p>
         </motion.div>
@@ -157,17 +145,35 @@ export default function WorkSection() {
           className="flex justify-center mb-12"
         >
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-[#0A1628] rounded-full">
-            <span className="text-[#C9A227] font-bold text-2xl">{projects.length}</span>
+            <span className="text-[#C9A227] font-bold text-2xl">50+</span>
             <span className="text-white text-sm">Completed Projects</span>
           </div>
         </motion.div>
 
-        {/* Projects grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+        {/* Featured projects grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {featuredProjects.map((project, index) => (
             <ProjectCard key={project.url} project={project} index={index} />
           ))}
         </div>
+
+        {/* View all button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <Button
+            onClick={handleViewAll}
+            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+          >
+            <span className="flex items-center gap-3">
+              See All Projects
+              <ArrowRight className="w-5 h-5" />
+            </span>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

@@ -63,7 +63,7 @@ export default function HeroSection() {
               <div className="p-2 bg-white/5 rounded-lg">
                 <Award className="w-5 h-5 text-[#C9A227]" />
               </div>
-              <span className="text-sm">9+ Completed Projects</span>
+              <span className="text-sm">50+ Completed Projects</span>
             </div>
             <div className="flex items-center gap-3 text-slate-300">
               <div className="p-2 bg-white/5 rounded-lg">
