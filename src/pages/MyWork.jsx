@@ -1,20 +1,14 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUp, Shield, Search, Globe, Loader2 } from 'lucide-react';
+import { ArrowUp, Shield, Search, Globe } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import ProjectCard from '@/components/portfolio/ProjectCard';
 import ContactSection from '@/components/portfolio/ContactSection';
 import { allProjects, categories } from '@/components/portfolio/projectData';
 
-const INITIAL_LOAD = 6;
-const LOAD_MORE_COUNT = 6;
-
 export default function MyWork() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
-  const [isLoading, setIsLoading] = useState(false);
-  const loaderRef = useRef(null);
 
   const filteredProjects = allProjects.filter(project => {
     const matchesCategory = selectedCategory === "All" || project.category === selectedCategory;
