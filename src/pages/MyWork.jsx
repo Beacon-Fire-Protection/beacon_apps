@@ -17,40 +17,6 @@ export default function MyWork() {
     return matchesCategory && matchesSearch;
   });
 
-  const visibleProjects = filteredProjects.slice(0, visibleCount);
-  const hasMore = visibleCount < filteredProjects.length;
-
-  // Reset visible count when filters change
-  useEffect(() => {
-    setVisibleCount(INITIAL_LOAD);
-  }, [selectedCategory, searchQuery]);
-
-  // Infinite scroll observer
-  const handleObserver = useCallback((entries) => {
-    const [entry] = entries;
-    if (entry.isIntersecting && hasMore && !isLoading) {
-      setIsLoading(true);
-      setTimeout(() => {
-        setVisibleCount(prev => Math.min(prev + LOAD_MORE_COUNT, filteredProjects.length));
-        setIsLoading(false);
-      }, 300);
-    }
-  }, [hasMore, isLoading, filteredProjects.length]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(handleObserver, {
-      root: null,
-      rootMargin: '100px',
-      threshold: 0
-    });
-    
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
-    }
-    
-    return () => observer.disconnect();
-  }, [handleObserver]);
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
