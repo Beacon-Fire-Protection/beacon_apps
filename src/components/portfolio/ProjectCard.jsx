@@ -6,8 +6,8 @@ export default function ProjectCard({ project, index }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   
-  // Use thum.io with extended wait time for fully loaded screenshots
-  const screenshotUrl = `https://image.thum.io/get/width/800/crop/500/wait/10/${project.url}`;
+  // Use WordPress mshots - fast and reliable
+  const screenshotUrl = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=800&h=500`;
 
   return (
     <motion.a
