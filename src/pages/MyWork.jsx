@@ -43,12 +43,12 @@ export default function MyWork() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
               <Shield className="w-4 h-4 text-[#C9A227]" />
-              <span className="text-[#C9A227] text-sm font-medium">Walter Johnson — NAICS 5415</span>
+              <span className="text-[#C9A227] text-sm font-medium">Johnson Ecommerce LLC — NAICS 5415</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">My Work</h1>
             <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
             <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-              A comprehensive showcase of all my 50+ web applications demonstrating expertise in 
+              A comprehensive showcase of all our 50+ web applications demonstrating expertise in 
               Computer Systems Design and Related Services.
             </p>
           </motion.div>
@@ -126,7 +126,7 @@ export default function MyWork() {
                 <Shield className="w-5 h-5 text-[#0A1628]" />
               </div>
               <div>
-                <p className="text-white font-semibold">Walter Johnson</p>
+                <p className="text-white font-semibold">Johnson Ecommerce LLC</p>
                 <p className="text-slate-500 text-sm">NAICS 5415 Contractor</p>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function MyWork() {
             </button>
 
             <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} Walter Johnson. All rights reserved.
+              © {new Date().getFullYear()} Johnson Ecommerce LLC. All rights reserved.
             </p>
           </div>
         </div>

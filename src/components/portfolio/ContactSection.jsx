@@ -57,7 +57,7 @@ export default function ContactSection() {
           <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
           <p className="text-slate-300 max-w-2xl mx-auto text-lg">
             Interested in discussing a government contract opportunity? 
-            I welcome inquiries from federal and local agencies.
+            We welcome inquiries from federal and local agencies.
           </p>
         </motion.div>
 
@@ -194,7 +194,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">Direct Contact</h3>
                 <p className="text-slate-300 mb-6">
-                  For direct communication, you may also reach me via email:
+                  For direct communication, you may also reach us via email:
                 </p>
                 <a
                   href="mailto:johnsonecommercellc@gmail.com"
@@ -215,7 +215,7 @@ export default function ContactSection() {
               <div className="p-6 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-xl">
                 <h4 className="text-[#C9A227] font-semibold mb-2">Response Time</h4>
                 <p className="text-slate-300 text-sm">
-                  I aim to respond to all inquiries within 24-48 business hours. 
+                  We aim to respond to all inquiries within 24-48 business hours. 
                   Urgent matters are given priority attention.
                 </p>
               </div>

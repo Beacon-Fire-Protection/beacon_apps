@@ -37,7 +37,7 @@ export default function AboutSection() {
           className="text-center mb-16"
         >
           <span className="text-[#C9A227] font-semibold text-sm tracking-widest uppercase">Background</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">About Our Founder</h2>
           <div className="w-16 h-1 bg-[#C9A227] mx-auto" />
         </motion.div>
 

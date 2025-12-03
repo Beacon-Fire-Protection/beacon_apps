@@ -25,7 +25,7 @@ export default function WorkSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">Featured Work</h2>
           <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            A selection of web applications demonstrating my capabilities in computer systems design, 
+            A selection of web applications demonstrating our capabilities in computer systems design, 
             development, and deployment. Click any project to view the live application.
           </p>
         </motion.div>
