@@ -16,7 +16,7 @@ export default function Footer() {
               <Shield className="w-5 h-5 text-[#0A1628]" />
             </div>
             <div>
-              <p className="text-white font-semibold">Walter Johnson</p>
+              <p className="text-white font-semibold">Johnson Ecommerce LLC</p>
               <p className="text-slate-500 text-sm">NAICS 5415 Contractor</p>
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
 
           {/* Right side - Copyright */}
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Walter Johnson. All rights reserved.
+            © {new Date().getFullYear()} Johnson Ecommerce LLC. All rights reserved.
           </p>
         </div>
       </div>
