@@ -1,10 +1,10 @@
 import Home from './pages/Home';
-import MyWork from './pages/MyWork';
+import Portfolio from './pages/Portfolio';
 
 
 export const PAGES = {
     "Home": Home,
-    "MyWork": MyWork,
+    "Portfolio": Portfolio,
 }
 
 export const pagesConfig = {

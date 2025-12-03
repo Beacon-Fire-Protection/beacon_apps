@@ -8,7 +8,7 @@ import { featuredProjects } from './projectData';
 
 export default function WorkSection() {
   const handleViewAll = () => {
-    window.open(createPageUrl('MyWork'), '_blank');
+    window.open(createPageUrl('Portfolio'), '_blank');
   };
 
   return (
