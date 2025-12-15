@@ -62,7 +62,7 @@ export default function WorkSection() {
         >
           <Button
             onClick={handleViewAll}
-            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all group"
+            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all group"
           >
             <span className="flex items-center gap-3">
               See All Projects
