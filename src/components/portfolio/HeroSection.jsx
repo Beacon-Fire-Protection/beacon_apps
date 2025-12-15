@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="absolute top-20 right-20 w-72 h-72 bg-[#C9A227]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#1E3A5F]/50 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-12 md:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
