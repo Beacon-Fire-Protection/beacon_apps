@@ -37,10 +37,13 @@ export default function WorkSection() {
           viewport={{ once: true }}
           className="flex justify-center mb-12"
         >
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-[#0A1628] rounded-full">
+          <button
+            onClick={handleViewAll}
+            className="inline-flex items-center gap-3 px-6 py-3 bg-[#0A1628] rounded-full hover:bg-[#1E3A5F] transition-all cursor-pointer"
+          >
             <span className="text-[#C9A227] font-bold text-2xl">50+</span>
             <span className="text-white text-sm">Completed Projects</span>
-          </div>
+          </button>
         </motion.div>
 
         {/* Featured projects grid */}
@@ -59,11 +62,11 @@ export default function WorkSection() {
         >
           <Button
             onClick={handleViewAll}
-            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all group"
           >
             <span className="flex items-center gap-3">
               See All Projects
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
           </Button>
         </motion.div>

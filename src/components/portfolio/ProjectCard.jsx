@@ -7,7 +7,9 @@ export default function ProjectCard({ project, index }) {
   const [imageError, setImageError] = useState(false);
   
   // Use WordPress mshots - fast and reliable
-  const screenshotUrl = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=800&h=500`;
+  // Add cache buster for Task Management to force refresh
+  const cacheBuster = project.title === "Task Management" ? `&v=${Date.now()}` : '';
+  const screenshotUrl = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=800&h=500${cacheBuster}`;
 
   return (
     <motion.a
