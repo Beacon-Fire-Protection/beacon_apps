@@ -18,7 +18,7 @@ export default function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: (index % 6) * 0.1 }}
-      className="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-100"
+      className="group block bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 border border-gray-800 hover:border-cyan-500/50"
     >
       <div className="relative aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden">
         {!imageError && (
@@ -32,20 +32,20 @@ export default function ProjectCard({ project, index }) {
         )}
         
         {(!imageLoaded || imageError) && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-[#0A1628] to-[#1E3A5F]">
-            <Globe className="w-12 h-12 text-[#C9A227] mb-3" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-black">
+            <Globe className="w-12 h-12 text-cyan-400 mb-3" />
             <span className="text-white font-medium">{project.title}</span>
           </div>
         )}
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/90 via-[#0A1628]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#C9A227] text-[#0A1628] rounded-full font-semibold text-sm">
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-full font-semibold text-sm">
             Visit Site <ExternalLink className="w-4 h-4" />
           </span>
         </div>
 
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#0A1628] text-xs font-semibold rounded-full">
+          <span className="px-3 py-1 bg-black/80 backdrop-blur-sm text-cyan-400 text-xs font-semibold rounded-full border border-cyan-500/30">
             {project.category}
           </span>
         </div>
@@ -54,13 +54,13 @@ export default function ProjectCard({ project, index }) {
       <div className="p-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-lg font-bold text-[#0A1628] group-hover:text-[#1E3A5F] transition-colors">
+            <h3 className="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
               {project.title}
             </h3>
-            <p className="text-slate-500 text-sm mt-1">{project.description}</p>
+            <p className="text-gray-400 text-sm mt-1">{project.description}</p>
           </div>
-          <div className="p-2 bg-slate-100 rounded-lg group-hover:bg-[#C9A227] transition-colors">
-            <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#0A1628] transition-colors" />
+          <div className="p-2 bg-gray-800 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
+            <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-cyan-400 transition-colors" />
           </div>
         </div>
       </div>

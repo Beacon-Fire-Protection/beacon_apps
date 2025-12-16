@@ -21,9 +21,9 @@ export default function WorkSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-[#C9A227] font-semibold text-sm tracking-widest uppercase">Portfolio</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-3 mb-6">Featured Work</h2>
-          <div className="w-16 h-1 bg-[#C9A227] mx-auto mb-6" />
+          <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Portfolio</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Built & Deployed</h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             A selection of web applications demonstrating our capabilities in computer systems design, 
             development, and deployment. Click any project to view the live application.
@@ -62,7 +62,7 @@ export default function WorkSection() {
         >
           <Button
             onClick={handleViewAll}
-            className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all group"
+            className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all group"
           >
             <span className="flex items-center gap-3">
               See All Projects
