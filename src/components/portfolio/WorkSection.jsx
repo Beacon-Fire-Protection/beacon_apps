@@ -12,7 +12,7 @@ export default function WorkSection() {
   };
 
   return (
-    <section id="work" className="py-24 bg-slate-50">
+    <section id="work" className="py-24 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,9 +24,9 @@ export default function WorkSection() {
           <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Portfolio</span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Built & Deployed</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            A selection of web applications demonstrating our capabilities in computer systems design, 
-            development, and deployment. Click any project to view the live application.
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+            Real applications, shipped to production. From SaaS tools to e-commerce platforms, 
+            each one built from scratch.
           </p>
         </motion.div>
 
@@ -39,9 +39,9 @@ export default function WorkSection() {
         >
           <button
             onClick={handleViewAll}
-            className="inline-flex items-center gap-3 px-6 py-3 bg-[#0A1628] rounded-full hover:bg-[#1E3A5F] transition-all cursor-pointer"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-gray-800 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 transition-all cursor-pointer"
           >
-            <span className="text-[#C9A227] font-bold text-2xl">50+</span>
+            <span className="text-cyan-400 font-bold text-2xl">50+</span>
             <span className="text-white text-sm">Completed Projects</span>
           </button>
         </motion.div>

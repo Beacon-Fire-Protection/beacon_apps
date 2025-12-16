@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Shield, Award, FileCheck } from 'lucide-react';
+import { Code2, Zap, Rocket, ChevronDown, Sparkles } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToAbout = () => {
@@ -8,68 +8,60 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="introduction" className="min-h-screen relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0A1628] via-[#0F2341] to-[#1E3A5F]">
-      {/* Subtle grid pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
+    <section className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+      {/* Animated grid background */}
+      <div className="absolute inset-0">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundImage: `linear-gradient(rgba(0,255,255,.03) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(0,255,255,.03) 1px, transparent 1px)`,
+          backgroundSize: '50px 50px',
+          animation: 'gridMove 20s linear infinite'
         }} />
       </div>
 
-      {/* Floating accent elements */}
-      <div className="absolute top-20 right-20 w-72 h-72 bg-[#C9A227]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#1E3A5F]/50 rounded-full blur-3xl" />
+      {/* Glowing accents */}
+      <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-12 md:pt-0">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-12 md:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-8">
-            <Shield className="w-4 h-4 text-[#C9A227]" />
-            <span className="text-[#C9A227] text-sm font-medium tracking-wide">NAICS 5415 — Computer Systems Design & Related Services</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
+            <Sparkles className="w-4 h-4 text-cyan-400" />
+            <span className="text-cyan-400 text-sm font-medium">MVP Development Studio</span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            Johnson Ecommerce LLC
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Build Your<br />
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Minimum Viable Product
+            </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-300 mb-4 font-light">
-            Government Contractor & Technology Solutions Provider
-          </p>
-
-          <div className="w-24 h-1 bg-gradient-to-r from-[#C9A227] to-[#E8C547] mx-auto mb-8" />
-
-          <p className="text-lg text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Delivering proven, reliable computer systems design solutions to federal and local government agencies. 
-            This portfolio demonstrates our capability, expertise, and commitment to excellence in fulfilling 
-            government contract requirements.
+          {/* Subheading */}
+          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Transform your ideas into fully functional web applications. 
+            Expert full-stack development with lightning-fast turnaround.
           </p>
 
           {/* Trust indicators */}
-          <div className="flex flex-wrap justify-center gap-8 mb-16">
-            <div className="flex items-center gap-3 text-slate-300">
-              <div className="p-2 bg-white/5 rounded-lg">
-                <FileCheck className="w-5 h-5 text-[#C9A227]" />
-              </div>
-              <span className="text-sm">Federal Experience</span>
+          <div className="flex flex-wrap gap-6 justify-center mt-12">
+            <div className="flex items-center gap-2 text-gray-300">
+              <Code2 className="w-5 h-5 text-cyan-400" />
+              <span>Full-Stack Development</span>
             </div>
-            <div className="flex items-center gap-3 text-slate-300">
-              <div className="p-2 bg-white/5 rounded-lg">
-                <Award className="w-5 h-5 text-[#C9A227]" />
-              </div>
-              <span className="text-sm">50+ Completed Projects</span>
+            <div className="flex items-center gap-2 text-gray-300">
+              <Zap className="w-5 h-5 text-purple-400" />
+              <span>50+ Apps Shipped</span>
             </div>
-            <div className="flex items-center gap-3 text-slate-300">
-              <div className="p-2 bg-white/5 rounded-lg">
-                <Shield className="w-5 h-5 text-[#C9A227]" />
-              </div>
-              <span className="text-sm">Quality Assured</span>
+            <div className="flex items-center gap-2 text-gray-300">
+              <Rocket className="w-5 h-5 text-pink-400" />
+              <span>Free Estimates</span>
             </div>
           </div>
         </motion.div>
@@ -77,13 +69,21 @@ export default function HeroSection() {
         {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 text-slate-400 hover:text-[#C9A227] transition-colors"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
         >
-          <ChevronDown className="w-8 h-8" />
+          <ChevronDown className="w-8 h-8 animate-bounce" />
         </motion.button>
       </div>
+
+      <style>{`
+        @keyframes gridMove {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(50px); }
+        }
+      `}</style>
     </section>
   );
 }
