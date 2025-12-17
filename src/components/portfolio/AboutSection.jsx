@@ -70,17 +70,17 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-cyan-500/20 shadow-2xl"
           >
-            <h3 className="text-white text-xl font-semibold mb-6">Tech Stack</h3>
+            <h3 className="text-white text-xl font-semibold mb-6">Development Process</h3>
             <ul className="space-y-4">
               {[
-                "React + TypeScript",
-                "Tailwind CSS",
-                "Database Design",
-                "API Development",
-                "Authentication Systems",
-                "Real-time Features",
-                "Payment Integration",
-                "Cloud Deployment"
+                "Requirements Analysis",
+                "Architecture Planning",
+                "Iterative Development",
+                "User Testing",
+                "Performance Optimization",
+                "Security Implementation",
+                "Deployment & Launch",
+                "Post-Launch Support"
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 text-gray-300">
                   <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full" />
