@@ -92,18 +92,6 @@ export default function HeroSection() {
             Practical, results driven focus • Clear definitions • No fluff
           </p>
         </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.button
-          onClick={scrollToAbout}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
-          aria-label="Scroll to about section"
-        >
-          <ChevronDown className="w-8 h-8 animate-bounce" />
-        </motion.button>
       </div>
 
       <style>{`
