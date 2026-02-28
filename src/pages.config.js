@@ -4,7 +4,6 @@ import Portfolio from './pages/Portfolio';
 
 export const PAGES = {
     "Home": Home,
-    "Portfolio": Portfolio,
 }
 
 export const pagesConfig = {
