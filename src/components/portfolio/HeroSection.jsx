@@ -92,7 +92,7 @@ export default function HeroSection() {
             Practical, results driven focus • Clear definitions • No fluff
           </p>
         </motion.div>
-        <div  className="flex flex-wrap gap-6 justify-center mt-4">
+        <div className="flex flex-wrap gap-6 justify-center mt-4">
                 {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
