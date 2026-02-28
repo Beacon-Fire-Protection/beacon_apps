@@ -81,13 +81,13 @@ export default function ContactSection() {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">Request Received!</h3>
                   <p className="text-gray-300 mb-6">
-                    I'll review your MVP idea and send you a detailed estimate within 24 hours.
+                    I'll review your message and give you a call to schedule your free consultation.
                   </p>
                   <Button
                     onClick={() => setIsSubmitted(false)}
                     className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white"
                   >
-                    Submit Another Idea
+                    Submit
                   </Button>
                 </motion.div>
               ) : (
@@ -136,7 +136,7 @@ export default function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleChange}
-                      placeholder="Your startup or project name"
+                      placeholder="Your company or project name"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                     />
                   </div>
@@ -144,7 +144,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-200 flex items-center gap-2">
                       <MessageSquare className="w-4 h-4 text-cyan-400" />
-                      Describe Your MVP Idea *
+                      Describe Your Issue, Opportunity, or Idea: *
                     </Label>
                     <Textarea
                       id="message"
@@ -171,7 +171,7 @@ export default function ContactSection() {
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Get Free Estimate
+                        Get Free Consultation
                       </span>
                     )}
                   </Button>
@@ -192,20 +192,20 @@ export default function ContactSection() {
               <div className="p-6 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <DollarSign className="w-6 h-6 text-cyan-400" />
-                  <h4 className="text-cyan-400 font-semibold text-lg">Free Estimate Includes:</h4>
+                  <h4 className="text-cyan-400 font-semibold text-lg">Free Discovery Calls Includes:</h4>
                 </div>
                 <ul className="space-y-3 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                    <span>Detailed project breakdown</span>
+                    <span>1 Hr Consulting Call</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                    <span>Timeline estimate</span>
+                    <span>Pre-Discovery Questionnaire & Workbook</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
-                    <span>Technology recommendations</span>
+                    <span>Strategic Recommendations based on Goals</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
