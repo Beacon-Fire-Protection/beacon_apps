@@ -53,11 +53,10 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Let's Build</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Estimate</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Consultation</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Have an MVP idea? Describe what you want to build and I'll provide a free, 
-            no-obligation quote with timeline and cost breakdown.
+            Share what you’re dealing with. In our free consultation, we’ll clarify priorities, surface hidden inefficiencies, and map a realistic path forward.
           </p>
         </motion.div>
 
@@ -105,7 +104,7 @@ export default function ContactSection() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="Jane Doe"
+                        placeholder="John Doe"
                         className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                       />
                     </div>
@@ -121,7 +120,7 @@ export default function ContactSection() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="jane@company.com"
+                        placeholder="john@company.com"
                         className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                       />
                     </div>
@@ -137,7 +136,7 @@ export default function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleChange}
-                      placeholder="Your company or project name"
+                      placeholder="Your startup or project name"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                     />
                   </div>
@@ -145,7 +144,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-200 flex items-center gap-2">
                       <MessageSquare className="w-4 h-4 text-cyan-400" />
-                      Describe Your Issue, Opportunity, or Idea *
+                      Describe Your MVP Idea *
                     </Label>
                     <Textarea
                       id="message"
@@ -154,9 +153,7 @@ export default function ContactSection() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      placeholder="What’s not working?
-What feels inefficient or confusing?
-What outcome are you trying to achieve?"
+                      placeholder="What problem does it solve? Who are your users? What are the core features you need? The more detail, the better the estimate."
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500 resize-none"
                     />
                   </div>
@@ -174,7 +171,7 @@ What outcome are you trying to achieve?"
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Request Consultation
+                        Get Free Estimate
                       </span>
                     )}
                   </Button>
