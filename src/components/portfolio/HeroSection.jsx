@@ -98,7 +98,6 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Scroll indicator */}
-        
         <motion.button
           onClick={scrollToAbout}
           initial={{ opacity: 0 }}
