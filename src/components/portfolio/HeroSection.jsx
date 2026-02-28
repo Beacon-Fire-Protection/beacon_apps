@@ -75,7 +75,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
               <Rocket className="w-5 h-5 text-cyan-400" />
-              <span>Small Business Strategic Consulting</span>
+              <span>Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Code2 className="w-5 h-5 text-purple-400" />
@@ -83,7 +83,7 @@ export default function HeroSection() {
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Zap className="w-5 h-5 text-pink-400" />
-              <span>Rapid Prototyping & Automation</span>
+              <span>Workflows & Automation</span>
             </div>
           </div>
 
