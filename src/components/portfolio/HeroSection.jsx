@@ -91,9 +91,9 @@ export default function HeroSection() {
           <p className="text-sm text-gray-500 mt-6">
             Practical, results driven focus • Clear definitions • No fluff
           </p>
-        </motion.div>
+
         <div className="flex flex-wrap gap-6 justify-center mt-4">
-                {/* Scroll indicator */}
+        {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
           initial={{ opacity: 0 }}
@@ -105,6 +105,7 @@ export default function HeroSection() {
           <ChevronDown className="w-8 h-8 animate-bounce" />
         </motion.button>
         </div>
+        </motion.div>
       </div>
 
       <style>{`
