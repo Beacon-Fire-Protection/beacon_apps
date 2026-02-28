@@ -92,13 +92,13 @@ export default function HeroSection() {
               <span>Workflow & Automation</span>
             </div>
           </div>
-<div>
+<div className="mb-4">
          {/* Optional micro-proof line */}
           <p className="text-sm text-gray-500 mt-6">
             Practical, results driven work • Clear timelines • No fluff
           </p>
 </div>
-        <div>
+        <div className="mb-10">
         {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
