@@ -206,6 +206,7 @@ export default function ContactSection() {
                     </li>
                     <ul>
                     <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
                     <span>Strategy Session</span>
                     </li>
                     <li className="flex items-start gap-2">
