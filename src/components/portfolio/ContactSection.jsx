@@ -105,7 +105,7 @@ export default function ContactSection() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="John Doe"
+                        placeholder="Jane Doe"
                         className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                       />
                     </div>
@@ -121,7 +121,7 @@ export default function ContactSection() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="john@company.com"
+                        placeholder="jane@company.com"
                         className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                       />
                     </div>
