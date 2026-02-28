@@ -137,7 +137,7 @@ export default function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleChange}
-                      placeholder="Your startup or project name"
+                      placeholder="Your Company or Project Name"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                     />
                   </div>
@@ -145,7 +145,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-200 flex items-center gap-2">
                       <MessageSquare className="w-4 h-4 text-cyan-400" />
-                      Describe Your MVP Idea *
+                      Describe Your Issues, Opportunities, or Idea *
                     </Label>
                     <Textarea
                       id="message"
