@@ -69,12 +69,6 @@ export default function HeroSection() {
             >
               Book a Free Discovery Call
             </a>
-            <button
-              onClick={scrollToServices}
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:bg-white/10 transition-colors"
-            >
-              See Services
-            </button>
           </div>
 
           {/* Trust indicators / service pillars */}
