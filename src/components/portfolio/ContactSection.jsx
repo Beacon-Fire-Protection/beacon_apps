@@ -53,10 +53,11 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Let's Build</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Unstuck in One Hour</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Estimate</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Share what you’re dealing with. In our free consultation, we’ll clarify priorities, surface hidden inefficiencies, and map a realistic path forward.
+            Have an MVP idea? Describe what you want to build and I'll provide a free, 
+            no-obligation quote with timeline and cost breakdown.
           </p>
         </motion.div>
 
@@ -136,7 +137,7 @@ export default function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleChange}
-                      placeholder="Your Company or Project Name"
+                      placeholder="Your startup or project name"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
                     />
                   </div>
@@ -144,7 +145,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-200 flex items-center gap-2">
                       <MessageSquare className="w-4 h-4 text-cyan-400" />
-                      Describe Your Issues, Opportunities, or Idea *
+                      Describe Your MVP Idea *
                     </Label>
                     <Textarea
                       id="message"
@@ -171,7 +172,7 @@ export default function ContactSection() {
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Request Consultation
+                        Get Free Estimate
                       </span>
                     )}
                   </Button>
@@ -192,34 +193,30 @@ export default function ContactSection() {
               <div className="p-6 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <DollarSign className="w-6 h-6 text-cyan-400" />
-                  <h4 className="text-cyan-400 font-semibold text-lg">Free Consultation Includes:</h4>
+                  <h4 className="text-cyan-400 font-semibold text-lg">Free Estimate Includes:</h4>
                 </div>
                 <ul className="space-y-3 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                    <span>1 hr In Person or Virtual Consultation</span>
+                    <span>Detailed project breakdown</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                    <span>Choose either a Strategy Session or a Mini Business Systems Audit </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
-                    <span>Pre Consultation Agenda + Workbook</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                      <span>Proposal with Scope and Timeline</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                      <span>Cost Breakdown</span>
-                    </li>
+                    <span>Timeline estimate</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
+                    <span>Technology recommendations</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
+                    <span>Cost breakdown</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
                     <span>No commitment required</span>
                   </li>
-                  </ul>
+                </ul>
               </div>
 
               <div>
@@ -239,7 +236,6 @@ export default function ContactSection() {
                   </div>
                 </a>
               </div>
-
             </div>
           </motion.div>
         </div>
