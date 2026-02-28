@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           {/* Optional micro-proof line */}
-          <p className="text-sm text-gray-500 mt-6">
+          <p className="text-sm text-gray-500 mt-6 mb-10">
             Practical, results driven focus • Clear definitions • No fluff
           </p>
 
