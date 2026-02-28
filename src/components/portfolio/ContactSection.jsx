@@ -205,19 +205,19 @@ export default function ContactSection() {
                     <span>Choose either a Strategy Session or a Mini Business Systems Audit </span>
                     </li>
                     <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
+                    <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
                     <span>Pre Consultation Agenda + Workbook</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
+                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
                       <span>Proposal with Scope and Timeline</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
+                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
                       <span>Cost Breakdown</span>
                     </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
+                    <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
                     <span>No commitment required</span>
                   </li>
                   </ul>
