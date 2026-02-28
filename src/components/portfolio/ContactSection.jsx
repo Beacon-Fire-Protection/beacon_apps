@@ -53,11 +53,10 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Let's Build</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Estimate</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Unstuck in 1 Hr</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Have an MVP idea? Describe what you want to build and I'll provide a free, 
-            no-obligation quote with timeline and cost breakdown.
+            Share what you’re dealing with. In our free consultation, we’ll clarify priorities, surface hidden inefficiencies, and map a realistic path forward..
           </p>
         </motion.div>
 
