@@ -10,7 +10,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <HeroSection />
       <AboutSection />
-      <WorkSection />
       <ContactSection />
       <Footer />
     </div>
