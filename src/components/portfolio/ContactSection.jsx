@@ -202,19 +202,19 @@ export default function ContactSection() {
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                    <span>Choose from a: </span>
+                    <span>Choose either a Strategy Session or a Mini Business Systems Audit </span>
                     </li>
                     <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                    <span>Strategy Session</span>
+                    <span>Pre Consultation Agenda + Workbook</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
-                      <span>???</span>
+                      <span>Proposal with Scope and Timeline</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                      <span>Cost breakdown</span>
+                      <span>Cost Breakdown</span>
                     </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
