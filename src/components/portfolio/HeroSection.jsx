@@ -43,7 +43,7 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-cyan-400" />
             <span className="text-cyan-400 text-sm font-medium">
-              Small Business Strategy
+              Small Business Strategy + Software
             </span>
           </div>
 
@@ -51,7 +51,7 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Clarity, Momentum,<br />
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              and Supporting Technology
+              and Working Software
             </span>
           </h1>
 
@@ -69,13 +69,19 @@ export default function HeroSection() {
             >
               Book a Free Discovery Call
             </a>
+            <button
+              onClick={scrollToServices}
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:bg-white/10 transition-colors"
+            >
+              See Services
+            </button>
           </div>
 
           {/* Trust indicators / service pillars */}
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
               <Rocket className="w-5 h-5 text-cyan-400" />
-              <span>Strategic Consulting</span>
+              <span>Small Business Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Code2 className="w-5 h-5 text-purple-400" />
@@ -83,29 +89,27 @@ export default function HeroSection() {
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Zap className="w-5 h-5 text-pink-400" />
-              <span>Workflows & Automation</span>
+              <span>Rapid Prototyping & Automation</span>
             </div>
           </div>
 
           {/* Optional micro-proof line */}
-          <p className="text-sm text-gray-500 mt-6 mb-10">
-            Practical, results driven focus • Clear definitions • No fluff
+          <p className="text-sm text-gray-500 mt-6">
+            Practical, outcomes-first work • Clear timelines • No fluff
           </p>
+        </motion.div>
 
-        <div className="flex flex-wrap gap-6 justify-center mt-4">
         {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
           aria-label="Scroll to about section"
         >
           <ChevronDown className="w-8 h-8 animate-bounce" />
         </motion.button>
-        </div>
-        </motion.div>
       </div>
 
       <style>{`
