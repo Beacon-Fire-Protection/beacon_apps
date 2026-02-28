@@ -154,7 +154,7 @@ export default function ContactSection() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      placeholder="What’s not working? <br />
+                      placeholder="What’s not working?
 What feels inefficient or confusing?
 What outcome are you trying to achieve?"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500 resize-none"
