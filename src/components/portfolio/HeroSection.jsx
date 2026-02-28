@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Zap, Rocket, ChevronDown, Sparkles } from 'lucide-react';
+import { Code2, Zap, Rocket, ChevronDown, Workflow } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToAbout = () => {
@@ -41,9 +41,9 @@ export default function HeroSection() {
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
-            <Sparkles className="w-4 h-4 text-cyan-400" />
+            <Workflow className="w-4 h-4 text-cyan-400" />
             <span className="text-cyan-400 text-sm font-medium">
-              Small Business Strategy + Software
+              Small Business Strategy
             </span>
           </div>
 
@@ -81,24 +81,24 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
               <Rocket className="w-5 h-5 text-cyan-400" />
-              <span>Small Business Strategic Consulting</span>
+              <span>Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Code2 className="w-5 h-5 text-purple-400" />
-              <span>Custom Software Development</span>
+              <span>Custom Development</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
               <Zap className="w-5 h-5 text-pink-400" />
-              <span>Rapid Prototyping & Automation</span>
+              <span>Workflow & Automation</span>
             </div>
           </div>
-
-          {/* Optional micro-proof line */}
+<div>
+         {/* Optional micro-proof line */}
           <p className="text-sm text-gray-500 mt-6">
-            Practical, outcomes-first work • Clear timelines • No fluff
+            Practical, results driven work • Clear timelines • No fluff
           </p>
-        </motion.div>
-
+</div>
+        <div>
         {/* Scroll indicator */}
         <motion.button
           onClick={scrollToAbout}
@@ -110,6 +110,8 @@ export default function HeroSection() {
         >
           <ChevronDown className="w-8 h-8 animate-bounce" />
         </motion.button>
+        </div>
+                  </motion.div>
       </div>
 
       <style>{`
