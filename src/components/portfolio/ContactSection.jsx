@@ -171,7 +171,7 @@ export default function ContactSection() {
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Get Free Estimate
+                        Request Consultation
                       </span>
                     )}
                   </Button>
