@@ -53,10 +53,11 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Let's Build</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Unstuck in 1 Hr</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Estimate</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Share what you’re dealing with. In our free consultation, we’ll clarify priorities, surface hidden inefficiencies, and map a realistic path forward..
+            Have an MVP idea? Describe what you want to build and I'll provide a free, 
+            no-obligation quote with timeline and cost breakdown.
           </p>
         </motion.div>
 
@@ -153,7 +154,9 @@ export default function ContactSection() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      placeholder="What problem does it solve? Who are your users? What are the core features you need? The more detail, the better the estimate."
+                      placeholder="What’s not working? <br />
+What feels inefficient or confusing?
+What outcome are you trying to achieve?"
                       className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500 resize-none"
                     />
                   </div>
