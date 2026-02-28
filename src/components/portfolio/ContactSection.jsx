@@ -193,25 +193,30 @@ export default function ContactSection() {
               <div className="p-6 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <DollarSign className="w-6 h-6 text-cyan-400" />
-                  <h4 className="text-cyan-400 font-semibold text-lg">Free Estimate Includes:</h4>
+                  <h4 className="text-cyan-400 font-semibold text-lg">Free Consultation Includes:</h4>
                 </div>
                 <ul className="space-y-3 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                    <span>Detailed project breakdown</span>
+                    <span>1 hr In Person or Virtual Consultation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
-                    <span>Timeline estimate</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
-                    <span>Technology recommendations</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
-                    <span>Cost breakdown</span>
-                  </li>
+                    <span>Choose from a: </span>
+                    </li>
+                    <ul>
+                    <li className="flex items-start gap-2">
+                    <span>Strategy Session</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
+                      <span></span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
+                      <span>Cost breakdown</span>
+                    </li>
+                    </ul>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5" />
                     <span>No commitment required</span>
