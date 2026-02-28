@@ -15,8 +15,8 @@ export default function Footer() {
               <Code2 className="w-5 h-5 text-white" />
             </div>
             <div>
-              <p className="text-white font-semibold">MVP Development Studio</p>
-              <p className="text-gray-500 text-sm">Full-Stack Web Development</p>
+              <p className="text-white font-semibold">Beacon Projects</p>
+              <p className="text-gray-500 text-sm">Small Business Consulting</p>
             </div>
           </div>
 
@@ -29,7 +29,7 @@ export default function Footer() {
           </button>
 
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} All rights reserved.
+            © {new Date().getFullYear()} Beacon Project Partners All rights reserved.
           </p>
         </div>
       </div>
