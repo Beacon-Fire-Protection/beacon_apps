@@ -226,7 +226,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">Prefer Email?</h3>
                 <a
-                  href="mailto:johnsonecommercellc@gmail.com"
+                  href="mailto:deb@beaconprojectpartners.com"
                   className="inline-flex items-center gap-3 px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl hover:border-cyan-500/50 transition-colors group"
                 >
                   <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
@@ -235,17 +235,12 @@ export default function ContactSection() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <p className="text-white font-medium group-hover:text-cyan-400 transition-colors">
-                      johnsonecommercellc@gmail.com
+                      deb@beaconprojectpartners.com
                     </p>
                   </div>
                 </a>
               </div>
 
-              <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
-                <p className="text-gray-400 text-sm">
-                  ⚡ Quick turnaround: Estimates typically sent within 24 hours
-                </p>
-              </div>
             </div>
           </motion.div>
         </div>
