@@ -210,7 +210,7 @@ export default function ContactSection() {
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-1.5" />
-                      <span></span>
+                      <span>???</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5" />
