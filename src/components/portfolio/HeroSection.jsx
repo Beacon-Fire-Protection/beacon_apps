@@ -94,17 +94,7 @@ export default function HeroSection() {
 </div>
 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-3">
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-5">
-        {/* Scroll indicator */}
-        <motion.button
-          onClick={scrollToAbout}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
-          aria-label="Scroll to about section"
-        >
-          <ChevronDown className="w-4 h-2 animate-bounce" />
-        </motion.button>
+
         </div>
         </div>
                   </motion.div>
