@@ -102,7 +102,7 @@ export default function HeroSection() {
           className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-600 hover:text-cyan-400 transition-colors"
           aria-label="Scroll to about section"
         >
-          <ChevronDown className="w-8 h-8 animate-bounce" />
+          <ChevronDown className="w-4 h-4 animate-bounce" />
         </motion.button>
         </div>
                   </motion.div>
