@@ -92,6 +92,7 @@ export default function HeroSection() {
             Practical, results driven work • Clear timelines • No fluff
           </p>
 </div>
+<div className="flex flex-col sm:flex-row gap-4 justify-center mt-3">
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-5">
         {/* Scroll indicator */}
         <motion.button
@@ -104,6 +105,7 @@ export default function HeroSection() {
         >
           <ChevronDown className="w-4 h-2 animate-bounce" />
         </motion.button>
+        </div>
         </div>
                   </motion.div>
       </div>
