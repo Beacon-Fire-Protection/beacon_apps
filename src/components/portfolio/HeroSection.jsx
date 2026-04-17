@@ -21,24 +21,24 @@ export default function HeroSection() {
             backgroundImage: `linear-gradient(rgba(0,255,255,.03) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(0,255,255,.03) 1px, transparent 1px)`,
             backgroundSize: '50px 50px',
-            animation: 'gridMove 20s linear infinite',
-          }}
-        />
+            animation: 'gridMove 20s linear infinite'
+          }} />
+        
       </div>
 
       {/* Glowing accents */}
       <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
       <div
         className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"
-        style={{ animationDelay: '1s' }}
-      />
+        style={{ animationDelay: '1s' }} />
+      
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-12 md:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
             <Workflow className="w-4 h-4 text-cyan-400" />
@@ -50,8 +50,8 @@ export default function HeroSection() {
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Clarity, Momentum,<br />
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              and Working Software
+            <span className="bg-gradient-to-r from-yellow-300 via-purple-400 to-pink-400 bg-clip-text text-transparent">and Working Software
+
             </span>
           </h1>
 
@@ -65,8 +65,8 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-200 hover:bg-cyan-500/25 transition-colors backdrop-blur-sm"
-            >
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-200 hover:bg-cyan-500/25 transition-colors backdrop-blur-sm">
+              
               Book a Free Discovery Call
             </a>
           </div>
@@ -106,6 +106,6 @@ export default function HeroSection() {
           100% { transform: translateY(50px); }
         }
       `}</style>
-    </section>
-  );
+    </section>);
+
 }
