@@ -57,7 +57,7 @@ export default function HeroSection() {
 
           {/* Subheading */}
           <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I help small businesses make smart decisions, move fast, and ship what matters—
+            I help small businesses make smart decisions, move fast, and get done things that matter—
             from strategic roadmaps to custom software and rapid prototypes.
           </p>
 
