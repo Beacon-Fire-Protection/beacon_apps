@@ -69,7 +69,7 @@ src/
 ## Local Development
 
 ### 1) Prerequisites
-- Node.js LTS release (recommended: current LTS)
+- Node.js 18+ (Node.js 20+ LTS recommended)
 - npm
 
 ### 2) Install
