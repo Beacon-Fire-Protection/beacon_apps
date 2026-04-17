@@ -1,4 +1,4 @@
-# Beacon Apps (Base44 + React)
+# Beacon Apps — Beacon Project Partners Site (Base44 + React)
 
 Single-page web app for **Beacon Project Partners** that presents consulting/software services and captures inbound consultation requests.
 
