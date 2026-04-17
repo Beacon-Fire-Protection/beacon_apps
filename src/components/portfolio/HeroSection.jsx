@@ -50,7 +50,7 @@ export default function HeroSection() {
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Clarity, Momentum,<br />
-            <span className="bg-gradient-to-r from-yellow-300 via-purple-400 to-pink-400 bg-clip-text text-transparent">and Working Software
+            <span className="bg-gradient-to-r from-yellow-300 via-yellow-50 to-teal-00 bg-clip-text text-transparent">and Working Software
 
             </span>
           </h1>
