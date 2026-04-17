@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Great+Vibes:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,10 +7,10 @@
 @layer base {
   :root {
     /* Rainbow LEGO Unicorn Palette - Light Mode */
-    --background: 250 40% 97%;
-    --foreground: 250 40% 8%;
+    --background: 250 0% 100%;
+    --foreground: 0 0% 33%;
     --card: 250 40% 100%;
-    --card-foreground: 250 40% 8%;
+    --card-foreground: 0 0% 33%;
     --popover: 250 40% 100%;
     --popover-foreground: 250 40% 8%;
     --primary: 327 40% 39%;
@@ -42,7 +42,7 @@
     --sidebar-ring: 333 71% 51%;
     
     /* Typography */
-    --font-sans: 'Poppins', sans-serif;
+    --font-sans: 'Quicksand', sans-serif;
     --font-serif: 'Great Vibes', system-ui;
   }
 
