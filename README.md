@@ -19,7 +19,7 @@ Core goals:
   - Services/about narrative
   - Contact/consultation form
   - Footer and smooth-scroll interactions
-- **Portfolio experience** (`Portfolio` page component available in code):
+- **Portfolio experience** (`Portfolio` page component exists but is not currently routed):
   - Search + category filtering
   - 50+ project entries from static data
 - **Lead capture integration**:
