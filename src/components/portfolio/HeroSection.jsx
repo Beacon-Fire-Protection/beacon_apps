@@ -41,48 +41,48 @@ export default function HeroSection() {
           
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
-            <Workflow className="text-primary lucide lucide-workflow w-4 h-4" />
-            <span className="text-primary text-sm font-medium">Small Business Strategy
-
+            <Workflow className="w-4 h-4 text-cyan-400" />
+            <span className="text-cyan-400 text-sm font-medium">
+              Small Business Strategy
             </span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Clarity, Momentum,<br />
-            <span className="bg-gradient-to-r from-primary via-secondary to-yellow-300 bg-clip-text text-transparent">and Working Software
+            <span className="bg-gradient-to-r from-yellow-300 via-purple-400 to-pink-400 bg-clip-text text-transparent">and Working Software
 
             </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get things done that matter.
-
-
+          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+            I help small businesses make smart decisions, move fast, and get done things that matter—
+            from strategic roadmaps to custom software and rapid prototypes.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="#contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-teal-500/15 border border-teal-500/30 text-t-200 hover:bg-teal-500/25 transition-colors backdrop-blur-sm">Book a Free Discovery Call
-
-
-
+              href="#contact"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-200 hover:bg-cyan-500/25 transition-colors backdrop-blur-sm">
+              
+              Book a Free Discovery Call
             </a>
           </div>
 
           {/* Trust indicators / service pillars */}
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
-              <Rocket className="lucide lucide-rocket w-5 h-5 text-teal-500" />
+              <Rocket className="w-5 h-5 text-cyan-400" />
               <span>Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
-              <Code2 className="lucide lucide-code-xml w-5 h-5 text-yellow-300" />
+              <Code2 className="w-5 h-5 text-purple-400" />
               <span>Custom Development</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
-              <Zap className="lucide lucide-zap w-5 h-5 text-teal-500" />
+              <Zap className="w-5 h-5 text-pink-400" />
               <span>Workflow & Automation</span>
             </div>
           </div>

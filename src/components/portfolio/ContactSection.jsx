@@ -18,7 +18,7 @@ export default function ContactSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
@@ -27,12 +27,12 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
+    
     await base44.entities.ContactInquiry.create({
       ...formData,
       status: 'new'
     });
-
+    
     setIsSubmitting(false);
     setIsSubmitted(true);
     setFormData({ name: '', email: '', organization: '', message: '' });
@@ -50,11 +50,11 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16">
-          
-          <span className="text-teal-400 font-semibold text-sm tracking-widest uppercase">LET'S BUILD</span>
+          className="text-center mb-16"
+        >
+          <span className="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Let's Build</span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Get Your Free Consultation</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-teal-400 to-y-400 mx-auto mb-6" />
+          <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             Share what you’re dealing with. In our free consultation, we’ll clarify priorities, surface hidden inefficiencies, and map a realistic path forward.
           </p>
@@ -67,15 +67,15 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-3">
-            
+            className="lg:col-span-3"
+          >
             <div className="bg-gray-900 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8">
-              {isSubmitted ?
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-12">
-                
+              {isSubmitted ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="text-center py-12"
+                >
                   <div className="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-8 h-8 text-cyan-400" />
                   </div>
@@ -84,29 +84,29 @@ export default function ContactSection() {
                     I'll review your message and give you a call to schedule your free consultation.
                   </p>
                   <Button
-                  onClick={() => setIsSubmitted(false)}
-                  className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white">
-                  
+                    onClick={() => setIsSubmitted(false)}
+                    className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white"
+                  >
                     Submit
                   </Button>
-                </motion.div> :
-
-              <form onSubmit={handleSubmit} className="space-y-6">
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-gray-200 flex items-center gap-2">
-                        <User className="lucide lucide-user w-4 h-4 text-teal-400" />
+                        <User className="w-4 h-4 text-cyan-400" />
                         Your Name *
                       </Label>
                       <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      placeholder="John Doe"
-                      className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500" />
-                    
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        placeholder="John Doe"
+                        className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-gray-200 flex items-center gap-2">
@@ -114,15 +114,15 @@ export default function ContactSection() {
                         Email Address *
                       </Label>
                       <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="john@company.com"
-                      className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500" />
-                    
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder="john@company.com"
+                        className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
+                      />
                     </div>
                   </div>
 
@@ -132,13 +132,13 @@ export default function ContactSection() {
                       Company / Project Name
                     </Label>
                     <Input
-                    id="organization"
-                    name="organization"
-                    value={formData.organization}
-                    onChange={handleChange}
-                    placeholder="Your company or project name"
-                    className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500" />
-                  
+                      id="organization"
+                      name="organization"
+                      value={formData.organization}
+                      onChange={handleChange}
+                      placeholder="Your company or project name"
+                      className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500"
+                    />
                   </div>
 
                   <div className="space-y-2">
@@ -147,36 +147,36 @@ export default function ContactSection() {
                       Describe Your Issue, Opportunity, or Idea: *
                     </Label>
                     <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    placeholder="What problem does it solve? Who are your users? What are the core features you need? The more detail, the better the estimate."
-                    className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500 resize-none" />
-                  
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={6}
+                      placeholder="What problem does it solve? Who are your users? What are the core features you need? The more detail, the better the estimate."
+                      className="bg-black/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-cyan-500 resize-none"
+                    />
                   </div>
 
                   <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white font-semibold py-6 text-lg">
-                  
-                    {isSubmitting ?
-                  <span className="flex items-center gap-2">
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white font-semibold py-6 text-lg"
+                  >
+                    {isSubmitting ? (
+                      <span className="flex items-center gap-2">
                         <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                         Submitting...
-                      </span> :
-
-                  <span className="flex items-center gap-2">
+                      </span>
+                    ) : (
+                      <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
                         Get Free Consultation
                       </span>
-                  }
+                    )}
                   </Button>
                 </form>
-              }
+              )}
             </div>
           </motion.div>
 
@@ -186,8 +186,8 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-2 flex flex-col justify-center">
-            
+            className="lg:col-span-2 flex flex-col justify-center"
+          >
             <div className="space-y-8">
               <div className="p-6 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
@@ -222,8 +222,8 @@ export default function ContactSection() {
                 <h3 className="text-xl font-semibold text-white mb-4">Prefer Email?</h3>
                 <a
                   href="mailto:deb@beaconprojectpartners.com"
-                  className="inline-flex items-center gap-3 px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl hover:border-cyan-500/50 transition-colors group">
-                  
+                  className="inline-flex items-center gap-3 px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl hover:border-cyan-500/50 transition-colors group"
+                >
                   <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-cyan-400" />
                   </div>
@@ -239,6 +239,6 @@ export default function ContactSection() {
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

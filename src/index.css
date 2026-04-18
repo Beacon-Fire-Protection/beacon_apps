@@ -1,85 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-:root {
-    /* Ocean Mist & Mustard Palette - Light Mode */
-    --background: #fffbe6;
-    --foreground: #052e29;
-    --card: #e8fcfa;
-    --card-foreground: #052e29;
-    --popover: #e8fcfa;
-    --popover-foreground: #052e29;
-    --primary: #19e6ce;
-    --primary-foreground: #052e29;
-    --secondary: #fcd303;
-    --secondary-foreground: #052e29;
-    --muted: #d1faf5;
-    --muted-foreground: #0a5c52;
-    --accent: #19e6ce;
-    --accent-foreground: #052e29;
-    --destructive: #d32f2f;
-    --destructive-foreground: #ffffff;
-    --border: #a3f5eb;
-    --input: #d1faf5;
-    --ring: #fcd303;
-    --chart-1: #fcd303;
-    --chart-2: #19e6ce;
-    --chart-3: #14b8a5;
-    --chart-4: #0f8a7b;
-    --chart-5: #caa902;
+  :root {
+    /* Rainbow LEGO Unicorn Palette - Light Mode */
+    --background: 250 0% 100%;
+    --foreground: 0 0% 33%;
+    --card: 250 40% 100%;
+    --card-foreground: 0 0% 33%;
+    --popover: 250 40% 100%;
+    --popover-foreground: 250 40% 8%;
+    --primary: 173 75% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 55 100% 50%;
+    --secondary-foreground: 250 40% 8%;
+    --muted: 250 40% 92%;
+    --muted-foreground: 250 10% 42%;
+    --accent: 173 75% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 344 77% 46%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 250 30% 88%;
+    --input: 250 30% 92%;
+    --ring: 351 95% 71%;
+    --chart-1: 351 95% 71%;
+    --chart-2: 55 100% 50%;
+    --chart-3: 163 77% 40%;
+    --chart-4: 292 84% 61%;
+    --chart-5: 50 95% 45%;
     --radius: 0.5rem;
-    --sidebar-background: #e8fcfa;
-    --sidebar-foreground: #052e29;
-    --sidebar-primary: #19e6ce;
-    --sidebar-primary-foreground: #052e29;
-    --sidebar-accent: #fcd303;
-    --sidebar-accent-foreground: #052e29;
-    --sidebar-border: #a3f5eb;
-    --sidebar-ring: #14b8a5;
+    --sidebar-background: 250 40% 97%;
+    --sidebar-foreground: 250 40% 15%;
+    --sidebar-primary: 330 81% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 55 100% 50%;
+    --sidebar-accent-foreground: 250 40% 8%;
+    --sidebar-border: 250 30% 88%;
+    --sidebar-ring: 333 71% 51%;
     
     /* Typography */
     --font-sans: 'Poppins', sans-serif;
-    --font-serif: 'Cabin', sans-serif;
+    --font-serif: 'Great Vibes', system-ui;
   }
 
   .dark {
-    /* Ocean Mist & Mustard Palette - Dark Mode */
-    --background: #04201d;
-    --foreground: #d1faf5;
-    --card: #052e29;
-    --card-foreground: #d1faf5;
-    --popover: #052e29;
-    --popover-foreground: #d1faf5;
-    --primary: #47ebd8;
-    --primary-foreground: #04201d;
-    --secondary: #fddc35;
-    --secondary-foreground: #04201d;
-    --muted: #0a5c52;
-    --muted-foreground: #75f0e1;
-    --accent: #47ebd8;
-    --accent-foreground: #04201d;
-    --destructive: #ff6b6b;
-    --destructive-foreground: #ffffff;
-    --border: #0f8a7b;
-    --input: #0a5c52;
-    --ring: #fddc35;
-    --chart-1: #fddc35;
-    --chart-2: #47ebd8;
-    --chart-3: #19e6ce;
-    --chart-4: #14b8a5;
-    --chart-5: #fde468;
-    --sidebar-background: #052e29;
-    --sidebar-foreground: #d1faf5;
-    --sidebar-primary: #47ebd8;
-    --sidebar-primary-foreground: #04201d;
-    --sidebar-accent: #fddc35;
-    --sidebar-accent-foreground: #04201d;
-    --sidebar-border: #0f8a7b;
-    --sidebar-ring: #47ebd8;
+    /* Rainbow LEGO Unicorn Palette - Dark Mode */
+    --background: 250 25% 7%;
+    --foreground: 250 30% 95%;
+    --card: 250 25% 12%;
+    --card-foreground: 250 30% 95%;
+    --popover: 250 25% 12%;
+    --popover-foreground: 250 30% 95%;
+    --primary: 327 92% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 98% 48%;
+    --secondary-foreground: 250 25% 7%;
+    --muted: 250 20% 22%;
+    --muted-foreground: 250 15% 65%;
+    --accent: 163 77% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 250 25% 20%;
+    --input: 250 25% 18%;
+    --ring: 327 92% 56%;
+    --chart-1: 327 92% 56%;
+    --chart-2: 45 98% 48%;
+    --chart-3: 163 77% 40%;
+    --chart-4: 280 65% 55%;
+    --chart-5: 50 95% 45%;
+    --sidebar-background: 250 25% 10%;
+    --sidebar-foreground: 250 30% 90%;
+    --sidebar-primary: 327 92% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 98% 48%;
+    --sidebar-accent-foreground: 250 25% 7%;
+    --sidebar-border: 250 25% 20%;
+    --sidebar-ring: 327 92% 56%;
   }
 
   html {
