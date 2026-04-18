@@ -46,7 +46,7 @@ export default function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
             Strategy + Workflow + Automation
           </h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto" />
+          <div className="w-16 h-1 bg-gradient-to-r from-teal-500 to-yellow-00 mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
