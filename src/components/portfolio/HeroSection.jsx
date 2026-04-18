@@ -41,16 +41,16 @@ export default function HeroSection() {
           
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
-            <Workflow className="w-4 h-4 text-cyan-400" />
-            <span className="text-cyan-400 text-sm font-medium">
-              Small Business Strategy
+            <Workflow className="lucide lucide-workflow w-4 h-4 primary" />
+            <span className="primary text-sm font-medium">Small Business Strategy
+
             </span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Clarity, Momentum,<br />
-            <span className="bg-gradient-to-r from-primary via-secondary to-foreground \nbg-clip-text text-transparent">and Working Software
+            <span className="bg-gradient-to-r from-primary via-secondary to-yellow-300 \nbg-clip-text text-transparent">and Working Software
 
             </span>
           </h1>
