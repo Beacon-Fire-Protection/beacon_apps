@@ -56,9 +56,9 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I help small businesses make smart decisions, move fast, and get done things that matter—
-            from strategic roadmaps to custom software and rapid prototypes.
+          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get done things that matter— from strategic roadmaps to custom software and rapid prototypes.
+
+
           </p>
 
           {/* CTAs */}
