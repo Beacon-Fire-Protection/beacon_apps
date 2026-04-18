@@ -74,15 +74,15 @@ export default function HeroSection() {
           {/* Trust indicators / service pillars */}
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
-              <Rocket className="lucide lucide-rocket w-5 h-5 text-primary" />
+              <Rocket className="lucide lucide-rocket w-5 h-5 text-teal-500" />
               <span>Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
-              <Code2 className="w-5 h-5 text-purple-400" />
+              <Code2 className="lucide lucide-code-xml w-5 h-5 text-yellow-300" />
               <span>Custom Development</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
-              <Zap className="w-5 h-5 text-pink-400" />
+              <Zap className="lucide lucide-zap w-5 h-5 text-t-400" />
               <span>Workflow & Automation</span>
             </div>
           </div>
