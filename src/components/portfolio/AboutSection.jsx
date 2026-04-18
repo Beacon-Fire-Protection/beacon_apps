@@ -79,8 +79,8 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-cyan-500/20 shadow-2xl">
+            transition={{ duration: 0.6, delay: 0.2 }} className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-teal-500/20 shadow-2xl">
+            
             
             <h3 className="text-white text-xl font-semibold mb-6">How We Work</h3>
             <ul className="space-y-4">
