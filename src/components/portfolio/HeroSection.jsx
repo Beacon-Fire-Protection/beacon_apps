@@ -64,10 +64,10 @@ export default function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-200 hover:bg-cyan-500/25 transition-colors backdrop-blur-sm">
-              
-              Book a Free Discovery Call
+              href="#contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-teal-500/15 border border-teal-500/30 text-t-200 hover:bg-teal-500/25 transition-colors backdrop-blur-sm">Book a Free Discovery Call
+
+
+
             </a>
           </div>
 
@@ -82,7 +82,7 @@ export default function HeroSection() {
               <span>Custom Development</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
-              <Zap className="lucide lucide-zap w-5 h-5 text-t-400" />
+              <Zap className="lucide lucide-zap w-5 h-5 text-teal-500" />
               <span>Workflow & Automation</span>
             </div>
           </div>
