@@ -111,11 +111,11 @@ export default function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all group">
+            transition={{ duration: 0.5, delay: index * 0.1 }} className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-teal-500/50 transition-all group">
+            
             
               <div className="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <item.icon className="w-6 h-6 text-cyan-400" />
+                <item.icon className="lucide lucide-code-xml w-6 h-6 text-teal-400" />
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">{item.title}</h4>
               <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
