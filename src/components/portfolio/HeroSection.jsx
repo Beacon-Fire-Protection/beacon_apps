@@ -56,7 +56,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get things done that matterfrom strategic roadmaps to custom software and rapid prototypes..
+          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get things done that matter.
 
 
           </p>
@@ -74,7 +74,7 @@ export default function HeroSection() {
           {/* Trust indicators / service pillars */}
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <div className="flex items-center gap-2 text-gray-300">
-              <Rocket className="w-5 h-5 text-cyan-400" />
+              <Rocket className="lucide lucide-rocket w-5 h-5 text-primary" />
               <span>Strategic Consulting</span>
             </div>
             <div className="flex items-center gap-2 text-gray-300">
