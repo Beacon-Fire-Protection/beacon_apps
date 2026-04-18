@@ -42,7 +42,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-sm">
             <Workflow className="lucide lucide-workflow w-4 h-4 primary" />
-            <span className="primary text-sm font-medium">Small Business Strategy
+            <span className="teal- text-sm font-medium">Small Business Strategy
 
             </span>
           </div>
