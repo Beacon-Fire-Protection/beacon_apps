@@ -95,7 +95,7 @@ export default function ContactSection() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-gray-200 flex items-center gap-2">
-                        <User className="w-4 h-4 text-cyan-400" />
+                        <User className="lucide lucide-user w-4 h-4 text-teal-400" />
                         Your Name *
                       </Label>
                       <Input
