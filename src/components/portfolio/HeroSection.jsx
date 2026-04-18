@@ -56,7 +56,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get thingdone things that matter— from strategic roadmaps to custom software and rapid prototypes.
+          <p className="text-slate-50 mb-8 mx-auto text-xl leading-relaxed max-w-3xl">I help small businesses make smart decisions, move fast, and get things done that matterfrom strategic roadmaps to custom software and rapid prototypes..
 
 
           </p>
