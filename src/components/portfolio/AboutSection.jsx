@@ -95,7 +95,7 @@ export default function AboutSection() {
               "Iterate & Support (small improvements over time)"].
               map((item, index) =>
               <li key={index} className="flex items-center gap-3 text-gray-300">
-                  <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full" />
+                  <div className="w-2 h-2 bg-gradient-to-r from-teal-500 to-yellow-300 rounded-full" />
                   {item}
                 </li>
               )}
