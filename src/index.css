@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cabin:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -43,7 +43,7 @@
     
     /* Typography */
     --font-sans: 'Poppins', sans-serif;
-    --font-serif: 'Great Vibes', system-ui;
+    --font-serif: 'Cabin', sans-serif;
   }
 
   .dark {
